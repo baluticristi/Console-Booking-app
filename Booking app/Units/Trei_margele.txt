@@ -1,0 +1,9 @@
+Trei Margele
+Hotel
+Bucuresti
+3
+7
+2 2 3 3 4 4 5
+200 200 300 300 400 400 500
+Breakfast Dinner
+20 50

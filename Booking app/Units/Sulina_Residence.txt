@@ -1,0 +1,9 @@
+Sulina Residence
+Pensiune
+Sulina
+5
+3
+3 3 3
+300 300 300
+Breakfast
+20

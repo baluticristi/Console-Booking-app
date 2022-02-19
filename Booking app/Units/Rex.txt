@@ -1,0 +1,13 @@
+Rex
+Hotel
+Mamaia
+5
+5
+4 4 4 4 4
+400 400 400 400 400
+Breakfast Lunch Dinner
+40 80 80
+cristianbaluti
+Amazing by all standards
+test
+It was all you coudld dream about!

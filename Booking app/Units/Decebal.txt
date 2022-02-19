@@ -1,0 +1,8 @@
+Decebal
+Hotel
+Drobeta
+3
+3
+2 3 5
+150 200 300
+

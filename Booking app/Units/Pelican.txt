@@ -1,0 +1,9 @@
+Pelican
+Hotel
+Mamaia
+2
+5
+4 4 5 8 8
+200 200 250 400 400
+Breakfast
+15
