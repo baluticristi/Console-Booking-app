@@ -1,0 +1,55 @@
+MTA Booking - Băluți Ilie Cristian:
+
+Implementare:
+	Am creat o serie de meniuri: login, mainMenu, All Units, Available Units ...
+	Odată cu pornirea programului se inițializează Unitățile create anterior, Conturile predefinite, și Rezervările.
+	Pentru Login am făcut Clasa Account ce are grijă de stocarea și verificarea conturilor în timpul logării
+	Din aceasta am derivat clasa Admin, care mosteneste stocarea si verificarea, dar este de tip singleton și
+are în plus metoda de adăugare a unei unități noi.
+	Exista si clasa Unit, unde sunt stocate toate detaliile despre o unitate, împreună cu metodele getter/setter;
+	Clasa Reservation stocheaza detaliile despre o rezervare, plus metode getter/setter
+	Clasa logs e acolo pentru gestionarea erorilor/ exceptiilor(Atentie/Alertă/Rezervare)
+	
+Mod de folosire:
+
+	Inițial există un ecran de conectare unde se verifică utilizatorul
+	Utilizatori:
+		username=test  password=1
+		username=ana.maria  password=strongpass
+		username=marcel.ciolacu  password=password
+		username=someone  password=123456
+		username=cristianbaluti  password=unbreakablepass
+	Administrator:
+		username=Admin  password=123
+
+
+	În ecranul următor există 5 opțiuni:
+		1. Show available units. - Afișează unitățile care au camere libere.
+		2. Show all units. - Afișează toate unitățile, indiferent de numărul de camere.
+		3. Show cities where you can book. - Afișează Orașele în care există unități de cazare.
+		4. Check reservations. - Verifică rezervările anterioare ale utilizatorului conectat.
+								-În cazul în care rezervările sunt terminate "Done", există
+								opțiunea de a scrie un review.
+		5. Disconnect - Deconecteaza utilizatorul actual din aplicatie și permite conectarea altuia.
+		
+		
+			După selectarea orcăreia dintre opțiunile 1/2 sau după alegera unui oraș în urma opțiunii 3
+		sunt afișate unitățile de cazare și numărul camerelor libere. Utilizatorul trebuie să selecteze
+		oricare dintre cele afișate (mai puțin dacă numarul de locuri libere este 0, în cazul 2).
+			Ulterior este afisat un ecran ce detaliază unitatea de cazare, camerele libere, serviciile
+		extra(mesele). Există opțiunea de a selecta o cameră sau de întoarcere.
+			După selectarea camerei se urmează pașii, perioada cazării, servicii extra.
+	
+	În cazul conectării ca Admin există opțiunile extra:
+		6. Add a new Unit (Oferă posibilitatea de creare a unei noi unități de cazare)
+		7. Check for unapproved reservations. (Dupa Inregistrarea unei rezervari, Administratorul are optiunea
+												de a o aproba sau refuza, din acest meniu)
+		8. Check all reservations. 	(Administratorul poate verifica toate rezervările, puse, aprobate, refuzate sau terminate) 
+												(Pending, Approved, Denied, Done)
+		9. Check approved reservations that have not been finished.	(Administratorul poate termina o rezervare aprobata, după ce aceasta are loc)
+		10. Generate statistics 
+		
+		Pentru optiunea 10 Administratorul poate genera 3 tipuri de statistici:
+			1. Topul unităților de cazare (Afișează un top al unitaților de cazare în funcție de numărul de rezervări)
+			2. Gradul de ocupare al unitatilor (Administratorul poate selecta o unitate și să vadă gradul de ocupare în procente)
+			3. Pretul mediu al cazarilor (Afisează prețul mediu al rezervarilor puse, mai puțin cele denied)
