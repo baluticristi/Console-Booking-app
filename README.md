@@ -8,3 +8,5 @@ The app has some hard coded users, and can simulate a Booking-like app that allo
 There is one administrator, that when connected has some extra choices like generating statistics, denying stays or accepting them, marking stays as done, adding new units...
 
 The users, reservations and units are kept in memory using a txt file for each, and a master "config.txt" for each category that keeps the name of the other files organised.
+
+There is some mixed English and Romanian that you can see withing my code, and my "interface", for which I am sorry.
